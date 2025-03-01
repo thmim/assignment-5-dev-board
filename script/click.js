@@ -24,7 +24,7 @@ document.getElementById('completed-btn1').addEventListener('click',function(even
     activityHistory.appendChild(div);
     const btn1 = document.getElementById('completed-btn1');
     btn1.disabled=true;
-    btn1.style.backgroundColor = "gray";
+    btn1.style.opacity = "1";
 })
 
 
@@ -52,7 +52,7 @@ document.getElementById('completed-btn2').addEventListener('click',function(even
        <p class="bg-blue-100 rounded-lg shadow-lg p-3">You have Complete The Task ${darkTitle} at ${currentTime}</p>
       `
     activityHistory.appendChild(div);
-    const btn1 = document.getElementById('completed-btn2');
-    btn1.disabled=true;
-    btn1.style.backgroundColor = "gray";
+    const btn2 = document.getElementById('completed-btn2');
+    btn2.disabled=true;
+    btn2.style.opacity = "1";
 })
