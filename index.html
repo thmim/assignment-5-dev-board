@@ -92,10 +92,10 @@
 
             <div class="bg-blue-100 p-4 rounded-lg shadow-md">
                 <div class="text-sm font-semibold text-indigo-300 bg-white rounded-lg p-3 w-25">CloudSync</div>
-                <div class="text-lg font-semibold text-indigo-300">Add Dark Mode</div>
+                <div id="dark-title" class="text-lg font-semibold text-indigo-300">Add Dark Mode</div>
                 <p class="text-gray-600 text-sm mt-2 bg-white rounded-lg p-3">Store user preferences in localStorage, update CSS...</p>
                 <div class="flex gap-3 items-center mt-4 text-sm text-indigo-300">Deadline: 21 March 2025
-                  <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-md">Completed</button>
+                  <button id="completed-btn2" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-md">Completed</button>
                 </div>
             </div>
 
@@ -143,15 +143,14 @@
               <img src="assets/activity.png" alt="">
               <p>Activity Log</p>
             </div>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded-md mt-2">Clear History</button>
-            <!-- <div class="mt-4 text-gray-600 text-sm">
-                ✅ You have completed the task "Add Dark Mode" at 12:48 PM
-            </div> -->
+            <button id="clear-btn" class="bg-blue-500 text-white px-4 py-2 rounded-md mt-2">Clear History</button>
+            <div id="activity-data"></div>
         </div>
 
     </div>
     <script src="utilities/utilities.js"></script>
  <script src="script/click.js"></script>
+ <script src="script/clear.js"></script>
  
 </body>
 </html>
