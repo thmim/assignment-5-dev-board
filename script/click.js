@@ -195,6 +195,7 @@ document.getElementById('completed-btn6').addEventListener('click',function(even
     
   event.preventDefault();
   alert('Board Updated Successfully');
+  alert('Congrates!You have completed all the current task.');
   const count = getInputValueById('assigned-count');
   // console.log(count);
     const finalCount = count-1;
