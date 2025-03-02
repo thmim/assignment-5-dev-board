@@ -61,7 +61,7 @@ document.getElementById('completed-btn1').addEventListener('click',function(even
     const currentTime = new Date().toLocaleTimeString();
     const addTitle = document.getElementById('fix-title');
     const fixTitle = addTitle.innerText
-    div.classList.add('mt-10');
+    div.classList.add('mt-3');
     div.innerHTML = `
     
        <p class="bg-blue-100 rounded-lg shadow-lg p-3">You have Complete The Task ${fixTitle} at ${currentTime}</p>
@@ -91,7 +91,7 @@ document.getElementById('completed-btn2').addEventListener('click',function(even
     const currentTime = new Date().toLocaleTimeString();
     const addTitle = document.getElementById('dark-title');
     const darkTitle = addTitle.innerText
-    div.classList.add('mt-10');
+    div.classList.add('mt-3');
     div.innerHTML = `
     
        <p class="bg-blue-100 rounded-lg shadow-lg p-3">You have Complete The Task ${darkTitle} at ${currentTime}</p>
@@ -120,7 +120,7 @@ document.getElementById('completed-btn3').addEventListener('click',function(even
   const currentTime = new Date().toLocaleTimeString();
   const addTitle = document.getElementById('homepage-title');
   const darkTitle = addTitle.innerText
-  div.classList.add('mt-10');
+  div.classList.add('mt-3');
   div.innerHTML = `
   
      <p class="bg-blue-100 rounded-lg shadow-lg p-3">You have Complete The Task ${darkTitle} at ${currentTime}</p>
@@ -150,7 +150,7 @@ document.getElementById('completed-btn4').addEventListener('click',function(even
   const currentTime = new Date().toLocaleTimeString();
   const addTitle = document.getElementById('emoji-title');
   const darkTitle = addTitle.innerText
-  div.classList.add('mt-10');
+  div.classList.add('mt-3');
   div.innerHTML = `
   
      <p class="bg-blue-100 rounded-lg shadow-lg p-3">You have Complete The Task ${darkTitle} at ${currentTime}</p>
@@ -180,7 +180,7 @@ document.getElementById('completed-btn5').addEventListener('click',function(even
   const currentTime = new Date().toLocaleTimeString();
   const addTitle = document.getElementById('ai-title');
   const darkTitle = addTitle.innerText
-  div.classList.add('mt-10');
+  div.classList.add('mt-3');
   div.innerHTML = `
   
      <p class="bg-blue-100 rounded-lg shadow-lg p-3">You have Complete The Task ${darkTitle} at ${currentTime}</p>
@@ -210,7 +210,7 @@ document.getElementById('completed-btn6').addEventListener('click',function(even
   const currentTime = new Date().toLocaleTimeString();
   const addTitle = document.getElementById('improve-title');
   const darkTitle = addTitle.innerText
-  div.classList.add('mt-10');
+  div.classList.add('mt-3');
   div.innerHTML = `
   
      <p class="bg-blue-100 rounded-lg shadow-lg p-3">You have Complete The Task ${darkTitle} at ${currentTime}</p>
