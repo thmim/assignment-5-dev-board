@@ -29,7 +29,7 @@
     }
   </script> -->
 </head>
-<body class="bg-blue-50">
+<body id="whole-page" class="bg-blue-50">
   <section class="w-11/12 mx-auto">
     <header>
         <nav class="mt-5 shadow bg-white rounded-2xl">
@@ -40,22 +40,24 @@
             </div>
           
               <div class="flex items-center gap-2 pr-3">
+                <div class="flex gap-2 bg-blue-100 rounded-full shadow-md p-3">
                 <img class="w-8 h-8" src="assets/checkbox.png" alt="">
-                <h2 id="count-box" class="text-3xl font-bold">23</h2>
-                <button id="theme-btn" class="btn ml-5"><img src="assets/theme-btn.png" alt=""></button>
+                <h2 id="count-box" class="text-3xl font-bold ">23</h2>
+              </div>
+                <button id="theme-btn" class="btn ml-5 p-3 rounded-full"><img src="assets/theme-btn.png" alt=""></button>
               </div>
          
             </div>
         </nav>
     </header>
     <main class="mt-10 mb-10">
-      <div class="grid grid-cols-4 gap-6 mt-6">
+      <div class="grid grid-cols-12 gap-6 mt-6">
         
        
-        <div class="col-span-3 grid grid-cols-3 gap-6">
-            
+        <div class="col-span-12 md:col-span-9 gap-6">
+      <div class="grid grid-cols-12 gap-4 mb-10">     
             <!-- Task Card -->
-            <div class="flex gap-3 rounded-lg shadow-lg items-center  bg-blue-100">
+            <div class="flex gap-3 rounded-lg shadow-lg items-center  bg-blue-100 col-span-3">
               <img class="ml-3" src="assets/checkbox.png" alt="">
               <div class="p-3">
                 <p class="text-indigo-300">Task Assigned </p>
@@ -64,13 +66,13 @@
             </div>
     
     
-    <div id="discover-div" class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg shadow-md flex items-center text-lg font-semibold">
+    <div id="discover-div" class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg shadow-md flex items-center text-lg font-semibold col-span-6 p-4">
                <img class="w-16 h-16" src="assets/board.png" alt="">
-               <p>Discover Something New Today!</p>
+               <p>Discover Something<br> New Today!</p>
             </div>
     
     
-    <div class=" bg-blue-100 p-6 rounded-lg shadow-md flex gap-2 items-center text-indigo-300">
+    <div class=" bg-blue-100 p-6 rounded-lg shadow-md flex gap-2 items-center text-indigo-300 col-span-3">
               <img src="assets/calender.png" alt="">
               <div id="date-section">
                 <p id="date"></p>
@@ -79,8 +81,8 @@
             </div>
     
 
-
-
+      </div>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div class="bg-blue-100 p-4 rounded-lg shadow-md">
                 <div class="text-sm font-semibold text-indigo-300 bg-white rounded-lg w-20 p-3">ShopEase</div>
                 <div id="fix-title" class="text-lg text-indigo-300 font-semibold">Fix Mobile Button Issue</div>
@@ -95,50 +97,51 @@
                 <div id="dark-title" class="text-lg font-semibold text-indigo-300">Add Dark Mode</div>
                 <p class="text-gray-600 text-sm mt-2 bg-white rounded-lg p-3">Store user preferences in localStorage, update CSS...</p>
                 <div class="flex gap-3 items-center mt-4 text-sm text-indigo-300">Deadline: 21 March 2025
-                  <button id="completed-btn2" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-md">Completed</button>
+                  <button id="completed-btn2" class="btn mt-2 bg-blue-600 text-white px-4 py-2 rounded-md">Completed</button>
                 </div>
             </div>
 
             <div class="bg-blue-100 p-4 rounded-lg shadow-md">
                 <div class="text-sm font-semibold text-indigo-300 bg-white rounded-lg p-3 w-20">SwiftPay</div>
-                <div class="text-lg font-semibold text-indigo-300">Optimize Home Page</div>
+                <div id="homepage-title" class="text-lg font-semibold text-indigo-300">Optimize Home Page</div>
                 <p class="text-gray-600 text-sm mt-2 bg-white rounded-lg p-3">Debug using Chrome DevTools, check for overlapping...</p>
                 <div class="flex gap-3 items-center mt-4 text-sm text-indigo-300">Deadline: 21 March 2025
-                  <button id="" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-md">Completed</button>
+                  <button id="completed-btn3" class="btn mt-2 bg-blue-600 text-white px-4 py-2 rounded-md">Completed</button>
                 </div>
             </div>
 
             <div class="bg-blue-100 p-4 rounded-lg shadow-md">
                 <div class="text-sm font-semibold text-indigo-300 bg-white rounded-lg p-3 w-20">Meta</div>
-                <div class="text-lg font-semibold text-indigo-300">Add new emoji 🤲</div>
+                <div id="emoji-title" class="text-lg font-semibold text-indigo-300">Add new emoji 🤲</div>
                 <p class="text-gray-600 text-sm mt-2 bg-white rounded-lg p-3">Debug using Chrome DevTools, check for overlapping...</p>
                 <div class="flex gap-3 items-center mt-4 text-sm text-indigo-300">Deadline: 21 March 2025
-                  <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-md">Completed</button>
+                  <button id="completed-btn4" class="btn mt-2 bg-blue-600 text-white px-4 py-2 rounded-md">Completed</button>
                 </div>
             </div>
 
             <div class="bg-blue-100 p-4 rounded-lg shadow-md">
                 <div class="text-sm font-semibold text-indigo-300 bg-white rounded-lg p-3 w-30">Google LLC</div>
-                <div class="text-lg font-semibold text-indigo-300">Integrate OpenAI API</div>
+                <div id="ai-title" class="text-lg font-semibold text-indigo-300">Integrate OpenAI API</div>
                 <p class="text-gray-600 text-sm mt-2 bg-white rounded-lg p-3">Debug using Chrome DevTools, check for overlapping...</p>
                 <div class="flex gap-3 items-center mt-4 text-sm text-indigo-300">Deadline: 21 March 2025
-                  <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-md">Completed</button>
+                  <button id="completed-btn5" class="btn mt-2 bg-blue-600 text-white px-4 py-2 rounded-md">Completed</button>
                 </div>
             </div>
 
             <div class="bg-blue-100 p-4 rounded-lg shadow-md">
                 <div class="text-sm font-semibold text-indigo-300 bg-white rounded-lg p-3 w-30">Glassdoor</div>
-                <div class="text-lg font-semibold text-indigo-300">Improve Job Searching</div>
+                <div id="improve-title" class="text-lg font-semibold text-indigo-300">Improve Job Searching</div>
                 <p class="text-gray-600 text-sm mt-2 bg-white rounded-lg p-3">Debug using Chrome DevTools, check for overlapping...</p>
                 <div class="flex gap-3 items-center mt-4 text-sm text-indigo-300">Deadline: 21 March 2025
-                  <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-md">Completed</button>
+                  <button id="completed-btn6" class="btn mt-2 bg-blue-600 text-white px-4 py-2 rounded-md">Completed</button>
                 </div>
             </div>
 
         </div>
+      </div>
 
         <!-- Activity Log (1/4 Width) -->
-        <div id="activity-section" class="col-span-1 bg-white p-4 rounded-lg shadow-md text-center">
+        <div id="activity-section" class="col-span-12 md:col-span-3 bg-white p-4 rounded-lg shadow-md text-center">
             <div class="flex gap-2 justify-center font-semibold text-lg">
               <img src="assets/activity.png" alt="">
               <p>Activity Log</p>
@@ -152,6 +155,7 @@
  <script src="script/click.js"></script>
  <script src="script/clear.js"></script>
  <script src="script/blog.js"></script>
+ <script src="script/theme.js"></script>
  
 </body>
 </html>
